@@ -79,15 +79,27 @@ Each type of RNN has its unique strengths and is suited to different types of se
 
 The loss function for a Recurrent Neural Network (RNN) is defined based on the specific task it is designed to perform. The choice of loss function directly impacts how the RNN learns during training by quantifying the difference between the predicted outputs and the actual target values. Here are some commonly used loss functions in RNNs, categorized by the type of task:
 
-For Regression Tasks:
-Mean Squared Error (MSE) Loss: Used when the output is a continuous value. The MSE calculates the average squared difference between the predicted values and the actual values, emphasizing larger errors.
+#### For Regression Tasks:    
 
-Mean Absolute Error (MAE) Loss: This calculates the average absolute difference between predicted and actual values, providing a linear emphasis on errors that is less sensitive to outliers than MSE.
+1. Mean Squared Error (MSE) Loss:        
+Used when the output is a continuous value. The MSE calculates the average squared difference between the predicted values and the actual values, emphasizing larger errors.
 
-For Classification Tasks:
-Cross-Entropy Loss (also known as Log Loss): Commonly used for classification problems, especially for binary and multi-class classification. It measures the performance of a classification model whose output is a probability value between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label.
-For Sequence-to-Sequence Tasks:
-Sequence Loss: Often used in tasks like language translation, text generation, or any task where the output is a sequence. Sequence loss can be a version of cross-entropy loss that is applied at each time step across the sequence, taking the sum or average of losses across the sequence. For tasks with variable-length sequences, techniques like masking may be used to ignore padding tokens in the loss calculation.
-Special Considerations for RNNs:
-Connectionist Temporal Classification (CTC) Loss: Specifically designed for sequence-to-sequence tasks where the alignment between the inputs and the target outputs is unknown, such as in speech recognition. CTC loss allows the network to output a variable-length prediction for each input sequence without requiring a pre-defined alignment between the input and target sequences.
+2. Mean Absolute Error (MAE) Loss:        
+This calculates the average absolute difference between predicted and actual values, providing a linear emphasis on errors that is less sensitive to outliers than MSE.
+
+#### For Classification Tasks:    
+
+1. Cross-Entropy Loss (also known as Log Loss):     
+Commonly used for classification problems, especially for binary and multi-class classification. It measures the performance of a classification model whose output is a probability value between 0 and 1. Cross-entropy loss increases as the predicted probability diverges from the actual label.       
+
+#### For Sequence-to-Sequence Tasks:        
+
+1. Sequence Loss:        
+Often used in tasks like language translation, text generation, or any task where the output is a sequence. Sequence loss can be a version of cross-entropy loss that is applied at each time step across the sequence, taking the sum or average of losses across the sequence. For tasks with variable-length sequences, techniques like masking may be used to ignore padding tokens in the loss calculation.     
+
+#### Special Considerations for RNNs:      
+
+1. Connectionist Temporal Classification (CTC) Loss:        
+Specifically designed for sequence-to-sequence tasks where the alignment between the inputs and the target outputs is unknown, such as in speech recognition. CTC loss allows the network to output a variable-length prediction for each input sequence without requiring a pre-defined alignment between the input and target sequences.
+
 The choice of loss function depends on the nature of the task (regression vs. classification vs. sequence prediction) and the specific characteristics of the data. During training, the RNN's weights are adjusted through backpropagation to minimize the chosen loss function, guiding the network towards making more accurate predictions.
