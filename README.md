@@ -73,8 +73,9 @@ ESNs belong to the reservoir computing family, where they use a fixed, randomly 
 
 Each type of RNN has its unique strengths and is suited to different types of sequence processing tasks. The choice of which type to use depends on the specific requirements of the task, including the need for capturing long-term dependencies, processing efficiency, and the complexity of the data.
 
+### Q4. What is the loss function for RNN defined?
 
-
+### Answer:
 
 The loss function for a Recurrent Neural Network (RNN) is defined based on the specific task it is designed to perform. The choice of loss function directly impacts how the RNN learns during training by quantifying the difference between the predicted outputs and the actual target values. Here are some commonly used loss functions in RNNs, categorized by the type of task:
 
