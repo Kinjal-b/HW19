@@ -194,4 +194,9 @@ In addition to these common functions, specialized activation functions have bee
 1. Hard Sigmoid: A computationally efficient approximation of the sigmoid function used in some LSTM implementations.             
 2. Softsign: Similar to tanh but with a softer transition, used in some contexts for its numerical properties.       
 
-The choice of activation function depends on the specific requirements of the RNN model and the nature of the task at hand. Tanh and sigmoid are particularly favored in RNNs due to their ability to model time dependencies and make decisions about information flow, especially in LSTM and GRU architectures. ReLU and its variants are chosen for their properties that help mitigate vanishing gradients, especially in the context of deeper networks or feedforward layers.
+The choice of activation function depends on the specific requirements of the RNN model and the nature of the task at hand. Tanh and sigmoid are particularly favored in RNNs due to their ability to model time dependencies and make decisions about information flow, especially in LSTM and GRU architectures. ReLU and its variants are chosen for their properties that help mitigate vanishing gradients, especially in the context of deeper networks or feedforward layers.      
+
+### Q7. Describe bidirectional recurrent neural networs (BRRN) and explain why they are needed.      
+
+### Answer:         
+
