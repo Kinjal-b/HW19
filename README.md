@@ -157,36 +157,36 @@ This process of forward propagation to generate predictions and BPTT to learn fr
 
 Activation functions in Recurrent Neural Networks (RNNs) play a crucial role in adding non-linearity to the learning process, enabling the network to model complex patterns in sequential data. The choice of activation function can significantly affect the network's ability to learn and its overall performance. Here are some of the most common activation functions used in RNNs:                  
 
-1. Hyperbolic Tangent (Tanh)         
-Nature:           
+#### Hyperbolic Tangent (Tanh):               
+1. Nature:           
 Non-linear, S-shaped curve that outputs values in the range [−1,1].        
-Usage:           
+2. Usage:           
 Widely used in RNNs for the hidden layers because its output range can model data that has been normalized to have zero mean, helping to stabilize the learning process.           
-Advantages:            
+3. Advantages:            
 Its symmetric output can help manage the gradient flow, reducing the risk of gradient vanishing compared to sigmoid for values near 0.        
 
-2. Sigmoid (Logistic)       
-Nature:             
+#### Sigmoid (Logistic):               
+1. Nature:             
 Non-linear, S-shaped curve that outputs values in the range [0,1].       
-Usage:             
+2. Usage:             
 Commonly used in gates of LSTM and GRU cells (e.g., input, forget, output gates) to regulate the flow of information, allowing the network to learn which data should be retained or forgotten.          
-Advantages:              
+3. Advantages:              
 Its clear distinction between values close to 0 and 1 is beneficial for making binary decisions within the gates of LSTM and GRU models.         
 
-3. Rectified Linear Unit (ReLU)          
-Nature:          
+#### Rectified Linear Unit (ReLU):                   
+1. Nature:          
 Linear for all positive values and zero for all negative values. It outputs values in the range  [0,+∞).          
-Usage:            
+2. Usage:            
 Although less common in the internal mechanisms of traditional RNNs, ReLU and its variants (e.g., Leaky ReLU) are used in some RNN architectures and are standard in the feedforward layers of deep learning models.         
-Advantages:            
+3. Advantages:            
 Helps to mitigate the vanishing gradient problem for positive input values and can accelerate the convergence of stochastic gradient descent compared to sigmoid and tanh functions.         
 
-4. Leaky Rectified Linear Unit (Leaky ReLU)       
-Nature:       
+#### Leaky Rectified Linear Unit (Leaky ReLU):               
+1. Nature:       
 Similar to ReLU but allows a small, non-zero gradient when the unit is not active and the input is less than zero.       
-Usage:         
+2. Usage:         
 Can be used in place of ReLU to prevent dying neurons, a problem where neurons stop learning completely due to only outputting zero.            
-Advantages:        
+3. Advantages:        
 It addresses the dying ReLU problem by allowing a small gradient when the input is negative, thus maintaining a gradient flow across all areas of the input space.               
 
 #### Specialized Activation Functions         
