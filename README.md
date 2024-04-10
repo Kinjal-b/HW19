@@ -215,15 +215,20 @@ At each time step, the outputs of the forward and backward passes are combined t
 
 #### Why BiRNNs Are Needed:
 
-Enhanced Contextual Understanding: Many tasks benefit from having access to both past and future context within a sequence. For example, in natural language processing (NLP), understanding the meaning of a word often depends on the words that come both before and after it. BiRNNs are designed to capture this bidirectional context, offering a more comprehensive understanding of the sequence.
+1. Enhanced Contextual Understanding:            
+Many tasks benefit from having access to both past and future context within a sequence. For example, in natural language processing (NLP), understanding the meaning of a word often depends on the words that come both before and after it. BiRNNs are designed to capture this bidirectional context, offering a more comprehensive understanding of the sequence.
 
-Improved Sequence Modeling: In tasks like speech recognition, sentiment analysis, and language translation, the ability to consider the entire sequence when making predictions at any point can significantly enhance performance. BiRNNs provide a more accurate model of these sequences by integrating information from both directions.
+2. Improved Sequence Modeling:                         
+In tasks like speech recognition, sentiment analysis, and language translation, the ability to consider the entire sequence when making predictions at any point can significantly enhance performance. BiRNNs provide a more accurate model of these sequences by integrating information from both directions.
 
-Versatility and Performance: BiRNNs have shown superior performance over unidirectional RNNs for a variety of tasks where the full context of the sequence is critical. Their architecture makes them versatile for different types of sequential data, improving model accuracy and effectiveness.
+3. Versatility and Performance:                 
+BiRNNs have shown superior performance over unidirectional RNNs for a variety of tasks where the full context of the sequence is critical. Their architecture makes them versatile for different types of sequential data, improving model accuracy and effectiveness.
 
-Complex Sequence Learning: Certain sequences have complex structures where the context needed to understand or predict parts of the sequence may lie far from the current focus in either direction. BiRNNs excel in learning from such complex sequences by leveraging their bidirectional processing capability.
+4. Complex Sequence Learning:                  
+Certain sequences have complex structures where the context needed to understand or predict parts of the sequence may lie far from the current focus in either direction. BiRNNs excel in learning from such complex sequences by leveraging their bidirectional processing capability.
 
-Applications:
+#### Applications:           
+
 BiRNNs are particularly useful in fields such as NLP for tasks like text classification, sentiment analysis, and machine translation, as well as in bioinformatics for gene sequencing, and in speech processing where the context before and after a given point is crucial for accurate predictions or classifications.
 
 Despite their advantages, BiRNNs come with the trade-off of increased computational complexity and resource requirements, given their dual processing paths. However, when the task demands deep contextual insights from sequences, BiRNNs offer a powerful solution by efficiently harnessing information from both past and future contexts.
