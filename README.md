@@ -200,14 +200,21 @@ The choice of activation function depends on the specific requirements of the RN
 
 ### Answer:         
 
-
 Bidirectional Recurrent Neural Networks (BiRNNs) extend the traditional Recurrent Neural Network (RNN) architecture by introducing a second layer that processes the input sequence in reverse order. This dual-layer architecture allows the network to have both forward-looking (future context) and backward-looking (past context) insights at any point in the sequence. Each direction processes the input independently, and their outputs are combined at each time step through concatenation, summation, or another method, depending on the specific task requirements.
 
-Structure and Functioning:
-Forward Pass: In the forward pass, one layer of the RNN processes the sequence from the beginning to the end, similar to a standard RNN. This layer captures the past context up to the current time step.
-Backward Pass: Simultaneously, another layer processes the sequence in reverse, from the end to the beginning. This layer captures future context information.
-Combination of Outputs: At each time step, the outputs of the forward and backward passes are combined to make a prediction. This combination ensures that the prediction at each time step benefits from information throughout the input sequence.
-Why BiRNNs Are Needed:
+#### Structure and Functioning:
+
+1. Forward Pass:             
+In the forward pass, one layer of the RNN processes the sequence from the beginning to the end, similar to a standard RNN. This layer captures the past context up to the current time step.
+
+2. Backward Pass:          
+Simultaneously, another layer processes the sequence in reverse, from the end to the beginning. This layer captures future context information.
+
+3. Combination of Outputs:             
+At each time step, the outputs of the forward and backward passes are combined to make a prediction. This combination ensures that the prediction at each time step benefits from information throughout the input sequence.
+
+#### Why BiRNNs Are Needed:
+
 Enhanced Contextual Understanding: Many tasks benefit from having access to both past and future context within a sequence. For example, in natural language processing (NLP), understanding the meaning of a word often depends on the words that come both before and after it. BiRNNs are designed to capture this bidirectional context, offering a more comprehensive understanding of the sequence.
 
 Improved Sequence Modeling: In tasks like speech recognition, sentiment analysis, and language translation, the ability to consider the entire sequence when making predictions at any point can significantly enhance performance. BiRNNs provide a more accurate model of these sequences by integrating information from both directions.
